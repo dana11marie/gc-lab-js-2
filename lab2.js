@@ -50,10 +50,19 @@ convertTemp(-40, "F");
 // figure it out
 
 var randomNumber = Math.floor(Math.random()*10);
-var ask = prompt("Choose a number 1-10.");
+var chooseNumber;
 
-if (ask !== randomNumber) {
-	ask = prompt("Not a match. Guess again.");
-} else if (ask === randomNumber) {
-	ask = alert("Good work!");
+do
+chooseNumber = prompt("Choose a number 1-10.");
+while
+(chooseNumber !== randomNumber);
+
+if(chooseNumber === randomNumber) {
+	chooseNumber = alert(GoodWork!)
 }
+
+// if (chooseNumber !== randomNumber) {
+// 	chooseNumber = prompt("Not a match. Guess again.");
+// } else if (chooseNumber === randomNumber) {
+// 	chooseNumber = prompt("Good work!");
+// }
